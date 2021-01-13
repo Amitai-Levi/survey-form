@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <h1 id="title">MY survey form</h1>
+    <p id="description">Just give me your info so I could sell it</p>
+    <form action="" id="survey-form">
+        <label for="name" id="name-label">Name:</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name here" required>
+        <p></p>
+        <label for="email" id="email-label" > Email address:</label>
+        <input type="email" name="email" id="email" placeholder="Enter your Email address here" required>
+        <p></p>
+        <label for="number" id="number-label"> Phone number:</label>
+        <input type="number" name="phone" placeholder="Enter your phone number here" id="number" min="490000000" max="1000000000">
+        <p>Gender:<p>
+        <input type="radio" name="gender" id="male" value="male" checked>
+        <label for="male">male</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Female</label>
+        <p></p>
+        <label for="dropdown">What's your relationship status?</label>
+        <select name="" id="dropdown">
+            <option value="bachelor">Bachelor</option>
+            <option value="relationship">In a relationship </option>
+            <option value="married">Married</option>
+            <option value="comp">It's complicated</option>
+        </select>
+        <p>Animal that I would like as a pet:</p>
+        <input type="checkbox" id="dog" name="animals" value="dog">
+        <label for="dogs">Dog</label>
+        <input type="checkbox" id="cat" name="animals" value="cat">
+        <label for="cat">Cat</label>
+        <input type="checkbox" id="fish" name="animals" value="fish">
+        <label for="fish">Fish</label>
+        <input type="checkbox" id="rabbit" name="animals" value="rabbit">
+        <label for="rabbit">Rabbit</label>
+        <input type="checkbox" id="hamster" name="animals" value="hamster">
+        <label for="hamster">Hamster</label>
+        <p></p>
+        <label for="other=info"> If you have any additional information that you think I could make money from, please tell me about it:</label>
+        <p></p>
+        <textarea name="other=info" id="other-info" cols="30" rows="10"></textarea>
+        <p></p>
+        <button type="submit" id="submit">Submit</button>    
+    </form>
+</body>
+</html>
